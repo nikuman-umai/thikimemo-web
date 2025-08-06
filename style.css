@@ -1,0 +1,182 @@
+/* style.css の修正 */
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container .header {
+    margin-bottom: 2rem;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.login-container p {
+    color: #666;
+}
+
+.login-container .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.login-btn,
+.register-btn,
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.login-btn {
+    background-color: #3498db;
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+}
+
+.register-btn {
+    background-color: #2ecc71;
+}
+
+.register-btn:hover {
+    background-color: #27ae60;
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ccc;
+    margin: 20px 0;
+}
+
+.divider hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+.guest-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #555;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.guest-button:hover {
+    background-color: #e0e0e0;
+}
+
+.links {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.links a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* style.css */
+/* 既存のCSSに追記 */
+
+/* ログインボタンのスタイル */
+.login-button {
+    background: linear-gradient(135deg, #a29bfe, #8c88f8);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(162, 155, 254, 0.3);
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(162, 155, 254, 0.4);
+    background: linear-gradient(135deg, #a29bfe, #7a75f1);
+}
+
+/* ヘッダーの配置調整 */
+.header-content {
+    /* 元のdisplay: flex; はそのまま */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* nav-menuのdisplay: none;を上書きするためにメディアクエリを調整する可能性がある */
+}
+
+/* モバイルでのログインボタンの表示調整 */
+@media (max-width: 768px) {
+    .header-content {
+        justify-content: space-between;
+    }
+    
+    .nav-menu {
+        display: none; /* 元のデザインを維持 */
+    }
+    
+    /* ログインボタンとロゴの並びを中央に持ってくる */
+    .header-content {
+        padding: 1rem; /* パディングを調整 */
+    }
+    .login-button {
+        /* モバイルでの調整が必要であればここに追加 */
+        padding: 0.4rem 1rem;
+    }
+}
